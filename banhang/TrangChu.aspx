@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Web Bán Hàng</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+     <link rel="stylesheet" href="slshow11.css">
     <style>
         .navbar {
             position:relative;
@@ -161,6 +161,30 @@
   
 }
 
+.navbar2{
+    position:relative;
+    bottom:200px;
+    margin-left:32%;
+   
+  overflow: auto;
+}
+.fa{
+    color:white;
+  ;
+}
+.navbar2 a{
+    color:white;
+
+}
+.fa-search{
+    margin-left:50px;
+}
+.fa-envelope{
+        margin-left:50px;
+}
+
+    
+
     </style>
 </head>
 <body>
@@ -202,16 +226,26 @@
             <div class="navbar1">
                 <div class="container">
                     <div class="vertical-menu">
-  <a href="#" class="active">Home</a>
+                        
+  <a href="#" class="active">Menu</a>
   <a href="#">Link 1</a>
   <a href="#">Link 2</a>
   <a href="#">Link 3</a>
   <a href="#">Link 4</a>
+
 </div>
+                    <div class="navbar2">
+                                          <a class="active1" href="#"><i class="fa fa-fw fa-home"></i> Trang Chủ</a> 
+<a href="#"><i class="fa fa-fw fa-search"></i> Liên Hệ</a> 
+<a href="#"><i class="fa fa-fw fa-envelope"></i> Tin Tức</a> 
+
+                    </div>
                 </div>
             </div>
             </header>
     
+  
+
 
             <script>JavaScript.js</script>
     </form>

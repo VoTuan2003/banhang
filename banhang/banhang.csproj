@@ -67,9 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="anh\vn-50009109-3b4844af326ff3b9c1e1793d0dbda9f3_xxhdpi.jpg" />
+    <Content Include="anh\vn-50009109-546421503d12d0ba84e2cfcc1a54c5e1_xxhdpi.jpg" />
+    <Content Include="anh\vn-50009109-666358fb57c5d08549b6a7cf1234919c_xxhdpi.jpg" />
+    <Content Include="anh\vn-50009109-6a826c5e33991cd82bb963fcf1fd5006_xxhdpi.jpg" />
     <Content Include="default.aspx" />
     <Content Include="JavaScript.js" />
-    <Content Include="site.css" />
+    <Content Include="slshow1.css" />
     <Content Include="TrangChu.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
