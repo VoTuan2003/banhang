@@ -7,6 +7,8 @@
     <title>Web Bán Hàng</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
      <link rel="stylesheet" href="slshow11.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <style>
         .navbar {
             position:relative;
@@ -183,8 +185,45 @@
         margin-left:50px;
 }
 
-    
-
+    .slick-prev,
+        .slick-next {
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .slick-prev {
+            left: 10px;
+        }
+        .slick-next {
+            right: 10px;
+        }
+         /* Di chuyển nút vào bên trong slideshow */
+        
+        .slick-prev:before,
+        .slick-next:before {
+            content: ''; /* Xóa nội dung hiển thị mặc định */
+        }
+        .slick-prev {
+            left: 0;
+        }
+        .slick-next {
+            right: 190px;
+        }
+        .slideshow{
+           margin-left:460px;
+           position:relative;
+           top:20px;
+        }
     </style>
 </head>
 <body>
@@ -245,8 +284,24 @@
             </header>
     
   
+        <div class="slideshow">
+        <div><img src="anh/vn-50009109-3b4844af326ff3b9c1e1793d0dbda9f3_xxhdpi.jpg"  alt="Slide 1"></div>
+        <div><img src="anh/vn-50009109-3b4844af326ff3b9c1e1793d0dbda9f3_xxhdpi.jpg" alt="Slide 2"></div>
+        <div><img src="anh/vn-50009109-3b4844af326ff3b9c1e1793d0dbda9f3_xxhdpi.jpg" alt="Slide 3"></div>
+    </div>
 
-
+    <!-- Thêm JavaScript của Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slideshow').slick({
+                arrows: true, // Hiển thị nút điều hướng
+                prevArrow: '<button type="button" class="slick-prev">&#10094;</button>', // HTML cho nút prev
+                nextArrow: '<button type="button" class="slick-next">&#10095;</button>' // HTML cho nút next
+            });
+        });
+    </script>
             <script>JavaScript.js</script>
     </form>
 </body>
